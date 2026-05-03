@@ -6,13 +6,19 @@
   box-shadow: 0 20px 50px 0 rgba(81, 127, 129, 0.3);
   padding: 16px 30px;
   cursor: pointer;
-  color:white;
+  color: white;
   font-size: 18px;
   font-weight: 700;
 }
-.shared-outline-button {
-  border-color: #154066;
-  color: #1f1f1f;
+.shared-container {
+  border-radius: 16px;
+  border: 1px solid #f1f5f9;
+  background: #fff;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.05);
+}
+
+:dir(rtl) button[role="combobox"] {
+  direction: rtl !important;
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;

@@ -4,6 +4,14 @@ import ContactEmail from "~/components/icons/ContactEmail.vue";
 import ContactPhone from "~/components/icons/ContactPhone.vue";
 import ContactWhatsapp from "~/components/icons/ContactWhatsapp.vue";
 import Container from "~/components/shared/Container.vue";
+
+//👉 Composables
+const { t } = useI18n();
+
+//👉 Meta
+useHead({
+  title: computed(() => `${t("Adak")} - ${t("Contact Us")}`),
+});
 </script>
 <template>
   <Container>

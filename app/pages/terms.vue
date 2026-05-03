@@ -1,6 +1,14 @@
 <script setup lang="ts">
 //👉 Imports
 import Container from "~/components/shared/Container.vue";
+
+//👉 Composables
+const { t } = useI18n();
+
+//👉 Meta
+useHead({
+  title: computed(() => `${t("Adak")} - ${t("Terms")}`),
+});
 </script>
 
 <template>

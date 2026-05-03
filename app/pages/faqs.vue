@@ -2,6 +2,14 @@
 //👉 Imports
 import Container from "~/components/shared/Container.vue";
 import Faq from "~/components/shared/Faq.vue";
+
+//👉 Composables
+const { t } = useI18n();
+
+//👉 Meta
+useHead({
+  title: computed(() => `${t("Adak")} - ${t("FAQs")}`),
+});
 </script>
 
 <template>

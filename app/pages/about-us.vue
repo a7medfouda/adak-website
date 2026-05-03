@@ -1,8 +1,17 @@
 <script setup lang="ts">
+//👉 Imports
 import AreYouReady from "~/components/about-us/AreYouReady.vue";
 import OurConcepts from "~/components/about-us/OurConcepts.vue";
 import WhyChooseUs from "~/components/about-us/WhyChooseUs.vue";
 import Container from "~/components/shared/Container.vue";
+
+//👉 Composables
+const { t } = useI18n();
+
+//👉 Meta
+useHead({
+  title: computed(() => `${t("Adak")} - ${t("About Us")}`),
+});
 </script>
 
 <template>
@@ -10,7 +19,6 @@ import Container from "~/components/shared/Container.vue";
     <Container>
       <!-- Concepts  -->
       <OurConcepts class="lg:mb-20 sm:mb-14 mb-10" />
-      >
     </Container>
     <!-- Why Choose Us  -->
     <WhyChooseUs />
