@@ -3,3 +3,6 @@
 
 @import "./tailwind.css";
 @import "./fonts.css";
+body{
+  background-color: #F3F4F3;
+}

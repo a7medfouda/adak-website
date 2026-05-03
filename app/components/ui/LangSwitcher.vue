@@ -27,22 +27,13 @@ const ariaLabel = computed(() => {
     :aria-busy="refreshing"
     :aria-label="ariaLabel"
     :title="ariaLabel"
-    class="cursor-pointer w-9 h-9 flex items-center justify-center rounded-lg text-[#154066] border border-gray-200 hover:border-[#154066]/30 hover:bg-[#154066]/[0.05] transition-all duration-150"
+    class="cursor-pointer flex items-center justify-center text-[#292D32] hover:text-[#198078] transition-colors"
     @click="handleLanguageSwitch"
   >
-    <!--
-      :disabled + :aria-busy prevent spam-clicks during the async
-      refreshNuxtData() call.
-
-      ClientOnly is kept to guard against hydration mismatches on cold loads
-      with no cookie. The fallback renders something meaningful (not "...").
-    -->
     <ClientOnly>
-      <span class="inline-block text-center">{{ buttonLabel }}</span>
-
+      <UIcon name="i-ph-globe" class="w-6 h-6" />
       <template #fallback>
-        <!-- SSR fallback: cookie default is "ar", so show "EN" as the switch target. -->
-        <span class="inline-block text-center">EN</span>
+        <UIcon name="i-ph-globe" class="w-6 h-6" />
       </template>
     </ClientOnly>
   </button>
