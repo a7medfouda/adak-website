@@ -1,6 +1,7 @@
 <script setup lang="ts">
 //👉 Imports
 import JobGrowth from "../icons/JobGrowth.vue";
+import JobCard from "./JobCard.vue";
 </script>
 
 <template>
@@ -32,6 +33,8 @@ import JobGrowth from "../icons/JobGrowth.vue";
         <p class="text-xs">زيادة في طلب المطورين هذا الشهر</p>
       </div>
     </div>
+    <!-- List  -->
+    <JobCard v-for="i in 6" :key="i" />
   </div>
 </template>
 <style lang="scss">
