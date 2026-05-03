@@ -1,10 +1,14 @@
 @layer base {
   body {
     font-family: "Inter", sans-serif;
+    background: #f9f9f9;
+    font-size: 14px;
+    font-weight: 400;
+    color: #506262;
   }
 
   :lang(ar) {
-    font-family: "ExpoArabic", sans-serif;
+    font-family: "Cairo", sans-serif;
   }
 }
 @theme {
@@ -12,5 +16,5 @@
   --color-secondary: var(--second-color);
 }
 .prose * {
-  font-family: "ExpoArabic", sans-serif !important;
+  font-family: "Ca", sans-serif !important;
 }
